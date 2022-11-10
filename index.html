@@ -1,0 +1,36 @@
+<Doctype html!>
+<html>
+<title> </title>
+<style>
+/* Default Value */
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+/* Frames */
+      .container{
+        display: flex;
+        padding: 0px 5px;
+      }
+</style>
+
+<!--<br> <section class="container">
+          <frame src="indexleft.html" width="20%" frameborder="0"></frame>
+          <frame width="60%" height="600px" src="main.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></frame>
+          <frame src="https://sms.iul.ac.in/" width="20%"  frameborder="0"></frame>
+        </section>
+       <br> -->
+<frameset cols = "20%,60%,20%">
+        <frame name = "top" src = 
+        "indexleft.html" />
+        <frame name = "main" src = 
+        "main.html" />
+        <frame name = "bottom" src = 
+        "https://sms.iul.ac.in" />        
+        <noframes>
+            <body>The browser you are working does 
+                         not support frames.</body>
+        </noframes>
+    </frameset>
+
